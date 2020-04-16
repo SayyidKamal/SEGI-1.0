@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="423dp"
+                android:layout_height="116dp"
+                android:src="@drawable/segi" />
+        </LinearLayout>
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/onClickViewRegCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Admins View Registered Courses"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/onClickAddUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Add user"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnOnClickEditUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Edit users"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnManageCourses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Edit Courses"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/onClickEditCourses"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:text="View Courses"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnOpenRegistration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Registration Portals"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"/>
+
+
+
+
+
+                <!-- <Button
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Course Registration"
+                     android:textSize="12dp"
+                     android:textStyle="bold" />
+
+                 <Button
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Course Registration"
+                     android:textSize="12dp"
+                     android:textStyle="bold" />-->
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+       <!-- <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:id="@+id/btn_register_course"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/circle"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/view_registration_icon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:text="Manage \nRegistrations"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:id="@+id/btnManageCourses"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/circle"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/new_registration_icon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:text="Manage \nCourses"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/circle"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/users_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:text="Manage \nUsers"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            />-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

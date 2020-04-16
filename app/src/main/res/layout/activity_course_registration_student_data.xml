@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSurface"
+    tools:context=".Student.CourseRegistrationStudentData"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/appbar">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--Student Layout-->
+    <LinearLayout
+        android:id="@+id/personalInformationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_corners_white_background"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:orientation="vertical">
+
+
+                        <!--Name-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+                                android:text="Name :"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="6"
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+
+                                android:paddingBottom="1dp"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <!--Passport ID-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+                                android:text="Passport No :"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblIcPassportNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <!--Student ID-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+                                android:text="Student ID :"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblStudentId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <!--phone Number-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+                                android:text="Phone No :"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblPhoneNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <!--Email-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+                                android:text="Email :"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="6"
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <!--Address-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+                                android:text="Address :"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lblAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:editable="false"
+                                android:gravity="left"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="7dp"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="1dp"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="toProfile"
+                android:text="@string/lbl_edit_personal_information"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <!--Button-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|right"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/buttons_round"
+                android:onClick="toCourseSelector"
+                android:text="Proceed"
+                android:textColor="#ffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Course Selector-->
+    <LinearLayout
+        android:id="@+id/selectCourseLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_weight="8">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.5"
+            android:scrollbars="vertical" />
+
+        <!--Button-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|right"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/buttons_round"
+                android:onClick="toCourseSummary"
+                android:text="Proceed"
+                android:textColor="#ffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

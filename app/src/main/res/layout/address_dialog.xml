@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corners_white_background"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <include
+            layout="@layout/appbar">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <!--state-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinnerState"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:entries="@array/state_Array"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <!--city-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:enabled="false"
+                android:entries="@array/null_city"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <!--postcode-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/postCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Post Code"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true"
+            app:met_floatingLabel="normal" />
+
+        <!--address-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Address"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            app:met_floatingLabel="normal" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:background="@drawable/buttons_round"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                />
+            
+            <Button
+                android:id="@+id/btnSet"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Set"
+                android:background="@drawable/buttons_round"
+                android:textColor="@color/white"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+   
+
+</LinearLayout>

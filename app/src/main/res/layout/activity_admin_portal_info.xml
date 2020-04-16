@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSurface"
+    tools:context=".Admin.AdminPortalInfo"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/appbar">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/RegistrationInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.85"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_corners_white_background"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            tools:visibility="visible">
+
+            <!--Sem-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:text="Semester Type : "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <!--Name-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:text="Portal ID : "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblPortalID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+
+                    android:paddingBottom="1dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <!--Early Reg-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:text="Early Reg : "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblEarlyReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <!--Late Reg-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:text="Late  Reg : "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblLateReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_edit_personal_information"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_weight=".65"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        app:tabSelectedTextColor="#fff"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:tabIndicatorColor="#fff"
+        app:tabTextColor="#fff"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_weight="6.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SEGI 1.0</string>
+
+    <!--Linkers-->
+    <string name="SegiComm">SEGI Berkomunikasi</string>
+    <string name="SegiChat">SEGI Sembang</string>
+    <string name="AdminMainMenu">Menu Utama Pentadbir</string>
+    <string name="StudMainMen">Menu Utama Pelajar</string>
+    <string name="Trial">Percubaan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello serpihan kosong</string>
+
+</resources>

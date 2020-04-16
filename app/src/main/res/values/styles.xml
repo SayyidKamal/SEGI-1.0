@@ -1,0 +1,180 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffff</item>
+    </style>
+
+    <style name="MenuStyle" parent="Theme.AppCompat.Light">
+        <item name="background">@android:color/white</item>
+    </style>
+
+    <string-array name="persons_array">
+        <item>Select role</item>
+        <item>Admin</item>
+        <item>Student</item>
+        <item>Mentor</item>
+        <item>Bursary Officer</item>
+        <item>International Officer</item>
+    </string-array>
+
+
+    <string-array name="Days">
+        <item>Select Day</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+
+
+    <!--STATE ARRAY-->
+    <string-array name="state_Array">
+        <item>Select State</item>
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Malacca</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Penang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+    </string-array>
+
+    <!--CITIES ARRAY-->
+    <string-array name="null_city">
+        <item>Select City</item>
+    </string-array>
+
+    <string-array name="Johor">
+        <item>Select City</item>
+        <item>Batu Pahat</item>
+        <item>Iskandar Puteri</item>
+        <item>Johor Bahru</item>
+        <item>Kluang</item>
+        <item>Kulai</item>
+        <item>Muar</item>
+    </string-array>
+
+    <string-array name="Kedah">
+        <item>Select City</item>
+        <item>Alor Setar</item>
+        <item>Kubang Pasu</item>
+        <item>Kulim</item>
+        <item>Sungai Petani</item>
+    </string-array>
+
+    <string-array name="Kelantan">
+        <item>Select City</item>
+        <item>Ketereh</item>
+        <item>Kota Bharu</item>
+        <item>Pasir Mas</item>
+    </string-array>
+
+    <string-array name="Malacca">
+        <item>Select City</item>
+        <item>Alor Gajah</item>
+        <item>Melaka City</item>
+    </string-array>
+
+    <string-array name="Negeri_Sembilan">
+        <item>Select City</item>
+        <item>Seremban</item>
+    </string-array>
+
+    <string-array name="Pahang">
+        <item>Select City</item>
+        <item>Kuantan</item>
+        <item>Temerloh</item>
+    </string-array>
+
+    <string-array name="Penang">
+        <item>Select City</item>
+        <item>George Town</item>
+        <item>Seberang Perai</item>
+    </string-array>
+
+    <string-array name="Perak">
+        <item>Select City</item>
+        <item>Ipoh</item>
+        <item>Manjung</item>
+        <item>Taiping</item>
+    </string-array>
+
+    <string-array name="Perlis">
+        <item>Select City</item>
+        <item>Kangar</item>
+    </string-array>
+
+    <string-array name="Sabah">
+        <item>Select City</item>
+        <item>Keningau</item>
+        <item>Kinabatangan</item>
+        <item>Kota Kinabalu</item>
+        <item>Lahad Datu</item>
+        <item>Penampang</item>
+        <item>Sandakan</item>
+        <item>Tawau</item>
+    </string-array>
+
+    <string-array name="Sarawak">
+        <item>Select City</item>
+        <item>Bintulu</item>
+        <item>Kuching</item>
+        <item>Miri</item>
+        <item>Padawan</item>
+        <item>Sibu</item>
+    </string-array>
+
+    <string-array name="Selangor">
+        <item>Select City</item>
+        <item>Ampang Jaya</item>
+        <item>Hulu Selangor</item>
+        <item>Kajang</item>
+        <item>Klang</item>
+        <item>Kuala Langat</item>
+        <item>Kuala Selangor</item>
+        <item>Petaling Jaya</item>
+        <item>Selayang</item>
+        <item>Sepang</item>
+        <item>Shah Alam</item>
+        <item>Subang Jaya</item>
+    </string-array>
+
+    <string-array name="Terengganu">
+        <item>Select City</item>
+        <item>Kemaman</item>
+        <item>Kuala Terengganu</item>
+    </string-array>
+
+
+
+    <string name="lbl_edit_personal_information"><u>Edit personal Information</u>.</string>
+
+
+    <style name="colored_checkBox" parent="Theme.AppCompat.Light">
+        <!-- selected checkbox color -->
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <!-- default/unselected checkbox color -->
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+    </style>
+
+
+
+
+</resources>

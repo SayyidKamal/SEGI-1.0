@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+
+    <!--<android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtCourseCode"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Code"
+                    android:textAlignment="center" />
+
+
+
+                <TextView
+                    android:id="@+id/txtCourseName"
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:hint="Name" />
+
+                <TextView
+                    android:id="@+id/txtCourseCredits"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Credits" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp"
+        android:background="#FF909090"
+        android:padding="2dip" />
+    <!--</android.support.v7.widget.CardView>-->
+</LinearLayout>

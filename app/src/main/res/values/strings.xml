@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SEGI 1.0</string>
+
+    <!--Linkers-->
+    <string name="SegiComm">SEGI Communicate</string>
+    <string name="SegiChat">SEGI Chat</string>
+    <string name="AdminMainMenu">Admin Main-Menu</string>
+    <string name="StudMainMen">Student Main-Menu</string>
+    <string name="Trial">Trial</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="fragments">
+        <item>Student</item>
+        <item>Mentor</item>
+    </string-array>
+
+
+</resources>

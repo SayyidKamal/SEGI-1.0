@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSurface"
+    tools:context=".CourseRegistrationSummary"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/appbar">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corners_white_background"
+            android:orientation="vertical"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:text="Name :"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:editable="false"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+
+                    android:paddingBottom="1dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:text="Email :"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:text="Student ID :"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblStudentId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:text="Passport No :"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblPassportNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/header"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Code"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="222dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:text="Name" />
+
+                    <TextView
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Credits" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </TableLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_white_background"
+            android:scrollbars="vertical" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Credit Hours "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/lblTotalCredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="55dp"
+                android:gravity="right"
+                android:hint="Total"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:layout_weight="1.5"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/buttons_round"
+            android:onClick="onClickProceed"
+            android:text="Proceed"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

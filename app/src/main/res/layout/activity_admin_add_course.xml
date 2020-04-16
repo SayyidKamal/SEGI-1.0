@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorSurface"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Admin.AdminAddCourse">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/appbar">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Spinner
+            android:id="@+id/spinner_person"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:entries="@array/persons_array"
+            android:spinnerMode="dropdown"
+            android:visibility="gone"/>
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtCourseCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Course Code"
+            android:inputType="text|textCapCharacters"
+            app:met_floatingLabel="normal"
+            android:maxLength="7"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/colorPrimary" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtCourseName"
+            app:met_floatingLabel="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Course Name"
+            android:inputType="text|textCapWords"
+            android:maxLength="20"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/colorPrimary" />
+
+
+
+       <!-- <EditText
+            android:id="@+id/txtFaculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Faculty"
+            android:inputType="text|textCapCharacters"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColorHint="@color/colorPrimary"
+            android:singleLine="true"
+            android:background="@drawable/rounded_corners_white_background"/>-->
+
+     <!--   <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtSpecialty"
+            android:layout_width="match_parent"
+            app:met_floatingLabel="normal"
+            android:layout_height="wrap_content"
+            android:hint="Specialty"
+            android:inputType="text|textCapCharacters"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/colorPrimary"
+            android:singleLine="true"
+            android:background="@drawable/rounded_corners_white_background"/>-->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Credit Hours"
+            android:textColor="#000" />
+
+        <RadioGroup
+            android:id="@+id/radGrpCrediHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_2.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="checkCreditRadBtn"
+                android:text="2.0"
+                android:theme="@style/colored_checkBox" />
+
+            <RadioButton
+                android:id="@+id/radio_3.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="checkCreditRadBtn"
+                android:text="3.0"
+                android:theme="@style/colored_checkBox" />
+
+            <RadioButton
+                android:id="@+id/radio_4.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="checkCreditRadBtn"
+                android:text="4.0"
+                android:theme="@style/colored_checkBox" />
+
+            <RadioButton
+                android:id="@+id/radio_6.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="checkCreditRadBtn"
+                android:text="6.0"
+                android:theme="@style/colored_checkBox" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Specialty"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:id="@+id/radGrpSpecialty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            >
+
+            <CheckBox
+                android:id="@+id/check_bsd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:onClick="check_bsd"
+                android:theme="@style/colored_checkBox"
+                android:text="Business System Designs"
+                />
+
+            <CheckBox
+                android:id="@+id/check_cn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:onClick="check_cn"
+                android:theme="@style/colored_checkBox"
+                android:text="Computer Networks" />
+
+            <CheckBox
+                android:id="@+id/check_se"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:onClick="check_se"
+                android:theme="@style/colored_checkBox"
+                android:text="Software Engineering"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/btnAddCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onClickAddCourse"
+            android:background="@drawable/buttons_round"
+            android:text="Add Course"
+            android:textColor="#ffff" />
+
+
+    </LinearLayout>
+</LinearLayout>

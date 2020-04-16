@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorSurface"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    tools:context=".Admin.EditUsers">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bar_layout"
+        android:layout_height="wrap_content"
+        >
+
+        <include
+            layout="@layout/appbar">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:gravity="left"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9D9D9"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:weightSum="10"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_weight="10"
+            android:layout_height="0dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <!--Floating button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:elevation="6dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:tooltipText="Add New Registration"
+        android:src="@drawable/add"
+        app:backgroundTint="@color/colorPrimaryDark">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</LinearLayout>

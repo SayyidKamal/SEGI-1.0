@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Admin.AdminCourse">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/appbar">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--layout 1-->
+    <LinearLayout
+        android:id="@+id/selectCourseLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Course"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Credits"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Specialization"
+                        android:textAlignment="center"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </TableLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.5"
+            android:scrollbars="vertical" />
+
+
+    </LinearLayout>
+
+    <!--Floating button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="6dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:tooltipText="Add New Registration"
+        android:src="@drawable/add"
+        android:visibility="gone"
+        app:backgroundTint="@color/colorPrimaryDark">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <!--Layout 2-->
+    <LinearLayout
+        android:id="@+id/RegistrationInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--Course Information-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+
+                android:background="@drawable/rounded_corners_white_background"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <!--Name-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="7dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="1dp"
+                        android:text="Course ID : "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lblCourseID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:editable="false"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="7dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="1dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <!--Sem-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="7dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="1dp"
+                        android:text="Course Name : "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lblCourseName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:editable="false"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="7dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="1dp"
+
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <!--Early Reg-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="7dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="1dp"
+                        android:text="Credit Hours : "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lblCreditHours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:editable="false"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="7dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="1dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <!--Late Reg-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:editable="false"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="7dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="1dp"
+                        android:text="Specialty : "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lblSpecialty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:editable="false"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="7dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="1dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_edit_personal_information"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5"
+                android:layout_margin="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Course Information"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtLecName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Lecturer Name"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    app:met_floatingLabel="normal" />
+
+                <!--Slot 1-->
+                <LinearLayout
+                    android:id="@+id/lay_slot1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Slot 1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Spinner
+                            android:id="@+id/spinnerDayS1"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:entries="@array/Days"
+                            android:spinnerMode="dropdown" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/txtS1Class"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:hint="Class"
+                            android:inputType="textCapWords"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            app:met_floatingLabel="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/txtS1StartTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:hint="Start Time"
+                            android:inputType="textCapWords"
+                            android:onClick="txtS1StartTime"
+                            android:singleLine="true"
+                            app:met_floatingLabel="normal" />
+
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/txtS1EndTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:hint="End Time"
+                            android:inputType="textCapWords"
+                            android:singleLine="true"
+                            app:met_floatingLabel="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Slot 2-->
+                <LinearLayout
+                    android:id="@+id/lay_slot2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Slot 2"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Spinner
+                            android:id="@+id/spinnerDayS2"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:entries="@array/Days"
+                            android:spinnerMode="dropdown" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/txtS2Class"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:hint="Class"
+                            android:inputType="textCapWords"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            app:met_floatingLabel="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/txtS2StartTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:hint="Start Time"
+                            android:inputType="textCapWords"
+                            android:onClick="txtS2StartTime"
+                            android:singleLine="true"
+                            app:met_floatingLabel="normal" />
+
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/txtS2EndTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:hint="End Time"
+                            android:inputType="textCapWords"
+                            android:singleLine="true"
+                            app:met_floatingLabel="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/buttons_round"
+                    android:onClick="btn_add"
+                    android:padding="10dp"
+                    android:text="Add"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

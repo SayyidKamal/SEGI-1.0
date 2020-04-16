@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.AdminStudentInfo">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bar_layout"
+        android:layout_height="wrap_content"
+        >
+
+        <include
+            layout="@layout/appbar">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:id="@+id/profile_image"
+                    android:layout_margin="15dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:focusableInTouchMode="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Full Name"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtName"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Full Name"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="IC/Passport"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtIcPassport"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:hint="IC/Passport"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Student ID"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtStudentId"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:hint="Student ID"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Email"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtEmailAddress"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Email"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Phone No "/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtPhone"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:hint="Phone No"
+                android:inputType="number"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Address"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtAddress"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Address"
+                android:inputType="textCapWords"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Mentor ID"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtMentor"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Mentor"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons_round"
+                android:text="Update"
+                android:onClick="OnClickUpdate"
+                android:textColor="@color/white" />
+
+            <!--<View
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:background="#FF909090"
+                android:padding="2dip" />-->
+
+            <!--<Button
+                android:id="@+id/btnAddStudentToMentor"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+
+                android:text="Add Student to Mentor"
+                android:onClick="onClickAddStudent2Mentor"
+                android:textColor="@color/white" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

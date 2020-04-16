@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/appbar">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!--PERSONAL INFORMATION-->
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtPortalId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="Portal ID"
+                android:inputType="textCapWords"
+                android:layout_marginRight="10dp"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtOpenDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Open Date"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="textCapCharacters"
+                app:met_floatingLabel="normal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="4"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:layout_width="154dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Registration Type "
+                    android:textColor="#000" />
+
+                <RadioGroup
+                    android:id="@+id/radGrpType"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radio_long"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:text="Long Sem"
+                        android:theme="@style/colored_checkBox" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio_short"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:text="Short Sem"
+                        android:theme="@style/colored_checkBox" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:textColor="@color/white"
+                android:background="@drawable/buttons_round"
+                android:text="Create"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

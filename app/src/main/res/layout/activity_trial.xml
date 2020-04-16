@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorSurface"
+    android:weightSum="10"
+    tools:context=".Trial">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/appbar">
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="vertical">
+
+
+            <!--BUTTON-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical"
+
+                >
+
+                <!--PERSONAL INFORMATION-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Personal Information"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Full Name"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    app:met_floatingLabel="normal" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtIcPassport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="IC/Passport"
+                    android:maxLength="9"
+                    android:inputType="textCapCharacters"
+                    app:met_floatingLabel="normal" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtStudentId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Student ID"
+                    android:maxLength="11"
+                    android:inputType="textCapCharacters"
+                    app:met_floatingLabel="normal" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    app:met_floatingLabel="normal" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    app:met_floatingLabel="normal" />
+
+                <!--CONTACT INFORMATION-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Contact Information"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    app:met_floatingLabel="normal" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Phone No"
+                    android:maxLength="11"
+                    android:inputType="number"
+                    app:met_floatingLabel="normal" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Address"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    app:met_floatingLabel="normal" />
+
+                <!--ADDRESS INFORMATION
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Address Information"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                &lt;!&ndash;state&ndash;&gt;
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffff"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spinnerState"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:entries="@array/state_Array"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                &lt;!&ndash;city&ndash;&gt;
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spinnerCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:enabled="false"
+                        android:entries="@array/null_city"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                &lt;!&ndash;postcode&ndash;&gt;
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/postCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Post Code"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    app:met_floatingLabel="normal" />-->
+
+                <!--address-->
+
+
+
+                <!--SCHOOL INFORMATION-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Intake Information"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:editable="false"
+                    android:hint="Intake Date"
+                    android:onClick="getDate"
+                    app:met_floatingLabel="normal" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:onClick="toRegister"
+                android:padding="10dp"
+                android:background="@drawable/buttons_round"
+                android:layout_margin="5dp"
+                android:layout_marginTop="50dp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

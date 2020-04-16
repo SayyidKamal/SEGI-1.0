@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.segi10">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Admin.AdminStudentInfo"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            />
+        <activity
+            android:name=".CourseRegistrationSummary"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            />
+        <activity
+            android:name=".Student.CourseRegistrationSelection"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            />
+        <activity android:name=".Course.CourseSelector" />
+        <activity
+            android:name=".Admin.AdminCourse"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Admin.AdminPortalInfo" />
+        <activity
+            android:name=".Admin.AdminPortal"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Admin.EditUsers"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Linkers" />
+        <activity
+            android:name=".Student.StudentMainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Admin.AdminMainActivity" />
+        <activity
+            android:name=".Admin.AdminAddCourse"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".UsersActivity" />
+        <activity
+            android:name=".Student.CourseRegistrationStudentData"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".MessageActivity" />
+        <activity
+            android:name=".Trial"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Notification.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notification.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

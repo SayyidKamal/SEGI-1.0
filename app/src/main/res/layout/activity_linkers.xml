@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Linkers"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#ffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SegiComm"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/btn_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SegiChat"
+        android:onClick="toChat"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/btn_Admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/AdminMainMenu"
+        android:onClick="toAdminMenu"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/btn_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/StudMainMen"
+        android:onClick="toStudentMenu"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"/>
+
+
+    <Button
+        android:id="@+id/btn_Trial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Trial"
+        android:onClick="toTrial"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"/>
+
+
+
+
+
+
+
+</LinearLayout>

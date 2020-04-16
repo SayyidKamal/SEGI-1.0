@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "366282528603",
+    "firebase_url": "https://segi-app.firebaseio.com",
+    "project_id": "segi-app",
+    "storage_bucket": "segi-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366282528603:android:e420b2f582f320ae9b6c7e",
+        "android_client_info": {
+          "package_name": "com.example.segi10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366282528603-vo87q01i1kave8sj6fjle4k5q3otknlh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.segi10",
+            "certificate_hash": "45fecd4efba5d4dea4353a9a905d19dd5cbd8e35"
+          }
+        },
+        {
+          "client_id": "366282528603-5hhi9i3jgj4vnsifvksi1qig4t5li524.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfUf6U852Q2j8giZS54XGQ630jUH0EsTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366282528603-5hhi9i3jgj4vnsifvksi1qig4t5li524.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
